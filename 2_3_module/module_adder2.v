@@ -12,3 +12,36 @@ module add1(a,b,cin,sum,cout);
     output sum,cout;
     assign {cout,sum} = a + b + cin;
 endmodule
+
+
+/* 
+
+module top_module(a,b,sum);
+  input [31:0] a,b;
+  output [31:0] sum;
+  wire cout,temp;
+
+  add16 adder1(
+    .a(a[15:0]),
+    .b(b[15:0]),
+    .cin(1'b0),
+    .cout(cout),
+    .sum(sum[15:0])
+  );
+  add16 adder2(
+    .a(a[31:16]),
+    .b(b[31:16]),
+    .cin(cout),
+    .cout(temp),
+    .sum(sum[31:16])
+  );
+endmodule
+
+module add1(a,b,cin,sum,cout);
+  input a,b,cin;
+  output sum,cout;
+  assign {cout,sum} = a+b+cin;
+endmodule
+
+
+ */

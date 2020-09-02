@@ -16,3 +16,47 @@ module top_module(a,b,sum);
             endcase
         end
 endmodule
+
+
+/* 
+
+module top_module(a,b,sum);
+  input [31:0] a,b;
+  output reg [31:0] sum;
+  reg cout;
+  wire temp_1,temp_2;
+  reg [15:0] sum_1,sum_2;
+
+  add16 sel(
+    a[15:0],
+    b[15:0],
+    1'b0,
+    sum[15:0],
+    cout
+  );
+
+  add16 adder1(
+    a[31:16],
+    b[31:16],
+    1'b0,
+    sum_1,
+    temp_1
+  );
+  add16 adder2(
+    a[31:16],
+    b[31:16],
+    1'b1,
+    sum_2,
+    temp_1
+  );
+
+  always @(cout)
+    begin
+      case(cout)
+        1'b0: sum[31:16] = sum_1;
+        1'b1: sum[31:16] = sum_2;
+      endcase
+    end
+endmodule
+
+ */

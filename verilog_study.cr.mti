@@ -1,0 +1,15 @@
+D:/Verilog/test/4MUX/four_mux_one.v {1 {vlog -work work -vopt D:/Verilog/test/4MUX/four_mux_one.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module four_mux_one
+
+Top level modules:
+	four_mux_one
+
+} {} {}} D:/Verilog/test/4MUX/four_mux_one_tb.v {1 {vlog -work work -vopt D:/Verilog/test/4MUX/four_mux_one_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module four_mux_one_tb
+
+Top level modules:
+	four_mux_one_tb
+
+} {} {}}
